@@ -1,0 +1,5 @@
+name = Cafuego Tools
+description = Tools used by cafuego to make life in Drupal a bit easier.
+;
+core = 6.x
+version = 6.x-0.1
