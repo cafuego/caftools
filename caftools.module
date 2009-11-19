@@ -15,7 +15,7 @@ function caftools_menu() {
         'title' => $role,
         'description' => 'Determine access to features by selecting permissions for ' . $role . '.',
         'page callback' => 'overrides_user_admin_perm_redir',
-        'callback arguments' => arg(4),
+        'callback arguments' => array(4),
         'access arguments' => array('administer permissions'),
       );
     }
