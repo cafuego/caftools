@@ -5,9 +5,9 @@
  * in the admin_menu.
  */
 function caftools_menu() {
+  $items = array();
 
   if (module_exists('admin_menu')) {
-    $items = array();
     $roles = user_roles();
 
     foreach($roles as $rid => $role) {
@@ -20,8 +20,8 @@ function caftools_menu() {
         'access arguments' => array('administer permissions'),
       );
     }
-    return $items;
   }
+  return $items;
 }
 
 /**
